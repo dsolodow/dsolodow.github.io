@@ -45,4 +45,5 @@ theme: minima
 show_downloads: "false" 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 github: [metadata]
