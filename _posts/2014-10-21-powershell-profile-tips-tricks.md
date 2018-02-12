@@ -1,11 +1,9 @@
 ---
-layout: post
 title: PowerShell Profile Tips & Tricks
 date: '2014-10-21T11:52:00.001-04:00'
-author: Damien Solodow
 tags:
-- PowerShell
-- IndyPoSH
+- powershell
+- indyposh
 modified_time: '2014-10-21T12:05:46.502-04:00'
 blogger_id: tag:blogger.com,1999:blog-23185081170317196.post-8761384466274846516
 blogger_orig_url: http://theevolvingadmin.blogspot.com/2014/10/powershell-profile-tips-tricks.html

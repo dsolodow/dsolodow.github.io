@@ -1,23 +1,18 @@
 ---
-layout: post
 title: Fun with certificates – Outlook Web Access certificate error
 date: '2014-09-19T14:31:00.001-04:00'
-author: Damien Solodow
 tags:
-modified_time: '2014-09-19T14:31:19.057-04:00'
+ - security
+ - certificates
 blogger_id: tag:blogger.com,1999:blog-23185081170317196.post-8303294717979752005
 blogger_orig_url: http://theevolvingadmin.blogspot.com/2014/09/fun-with-certificates-outlook-web.html
 ---
 
 ## The Problem:
 
-------------
-
-We recently had a user (we’ll call them “Bob”) send in a ticket because when he tried to access Outlook Web Access from home he got a certificate error in the web browser that said the site wasn’t secure. Understandably concerned by this, he closed out the browser and contacted us.
+We recently had a user (we’ll call them "Bob") send in a ticket because when he tried to access Outlook Web Access from home he got a certificate error in the web browser that said the site wasn’t secure. Understandably concerned by this, he closed out the browser and contacted us.
 
 ## The Diagnosis:
-
-------------
 
 So the first order of business was to determine if it was a global issue or just poor Bob. Since no other tickets had come in, and the site loaded correctly for us here it was almost certainly just Bob having this issue.
 
@@ -30,21 +25,19 @@ So the first order of business was to determine if it was a global issue or just
 
 This last point is rather interesting and is actually rather telling. IE and Chrome both use the Windows certificate store, whereas Firefox maintains its own certificate store. On a side-note, this is why Firefox is problematic with non-public Certificate Authorities; you can’t deploy the root certificates to it via GPO.
 
-So we took a look at Bob’s PC, and visited our Outlook Web Access page to get the certificate warning. We pulled up the certificate info ([HowTo](https://www.globalsign.com/en/blog/how-to-view-ssl-certificate-details/#ie)) so we could try to find out why his browser thought something was wrong.  Here’s what we saw:
+So we took a look at Bobs PC, and visited our Outlook Web Access page to get the certificate warning. We pulled up the certificate info ([HowTo](https://www.globalsign.com/en/blog/how-to-view-ssl-certificate-details/#ie)) so we could try to find out why his browser thought something was wrong.  Here’s what we saw:
 
-![Image of certificate details showing error]({{site.url}}/images/2014-09-19-fun-with-certs/cert.png)
+![Image of certificate details showing error]({{site.url}}/assets/images/2014-09-19-fun-with-certs/cert.png)
 
 The Details tab wasn't immediately helpful, but the Certification Path tab was. The Certification Path tab shows the [Certificate Chain](http://en.wikipedia.org/wiki/Chain_of_trust) for the given certificate:
 
-![Image of certificate path]({{site.url}}/images/2014-09-19-fun-with-certs/certpath.png)
+![Image of certificate path]({{site.url}}/assets/images/2014-09-19-fun-with-certs/certpath.png)
 
 Our certificate (*.harrison.edu) said that it was OK. The next one up the chain (DigiCert Secure Server CA) also said it was OK. However, the top (or root) certificate was not OK.
 
 Ah-ha! This meant that the Windows certificate store had a corrupt copy of that certificate that needed to be replaced.
 
 ## The Solution:
-
-------------
 
 1. Determine which certificate in the store needs to be replaced
 2. Get a good copy of the certificate

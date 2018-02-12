@@ -1,12 +1,10 @@
 ---
-layout: post
 title: Write-Blog "Dear IIS, please tell my *why* it failed." -UsefulContent $true
 date: '2013-05-16T20:13:00.002-04:00'
-author: Damien Solodow
 tags:
-- Security
-- Passwords
-- IIS
+- security
+- passwords
+- iis
 modified_time: '2013-05-16T20:13:12.931-04:00'
 blogger_id: tag:blogger.com,1999:blog-23185081170317196.post-501679293012065415
 blogger_orig_url: http://theevolvingadmin.blogspot.com/2013/05/write-blog-dear-iis-please-tell-my-why.html

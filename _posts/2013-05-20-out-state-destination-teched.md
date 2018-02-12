@@ -1,11 +1,9 @@
 ---
-layout: post
 title: Out-State -Destination "TechEd"
 date: '2013-05-20T13:22:00.001-04:00'
-author: Damien Solodow
 tags:
-- Conventions
-- Off-Topic
+- conventions
+- off-topic
 ---
 
 # I'm leaving, on a jet-plane..
