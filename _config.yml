@@ -49,12 +49,9 @@ author:
   uri              : "https://dsolodow.github.io"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        : "dsolodow"
-  codepen          :
-  dribbble         :
   facebook         :
   github           : "dsolodow"
   gitlab           : "dsolodow"
-  google_plus      :
   keybase          :
   instagram        :
   linkedin         : "damien-solodow-56155914"
@@ -62,6 +59,7 @@ author:
   twitter          : "dsolodow"
   youtube          : 
 
+og_image: /assets/images/bio-photo.jpg	  
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
@@ -116,13 +114,6 @@ whitelist:
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
   path: /categories/
@@ -131,7 +122,6 @@ tag_archive:
   path: /tags/
 
 # HTML Compression
-# - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
