@@ -23,7 +23,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus"
   disqus:
-    shortname            : https://theevolvingadmin.disqus.com
+    shortname            : "theevolvingadmin"
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true
