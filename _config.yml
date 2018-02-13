@@ -93,6 +93,10 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: America/Indiana/Indianapolis
 
+include:
+  - .htaccess
+  - _pages
+
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
