@@ -59,7 +59,11 @@ author:
   twitter          : "dsolodow"
   youtube          : 
 
-og_image: /assets/images/bio-photo.jpg	  
+# Social Sharing
+twitter:
+  username               : "dsolodow"
+og_image               : /assets/images/bio-photo.jpg	  
+
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
