@@ -43,25 +43,20 @@ analytics:
 author:
   name             : "Damien Solodow"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "TBD"
+  bio              : "Long time Windows sysadmin, lifelong geek. Married crazy cat guy."
   location         : "Central Indiana"
-  email            : "bookwyrm79@gmail.com"
+  email            : "dsolodow@outlook.com"
   uri              : "https://dsolodow.github.io"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        : "dsolodow"
-  facebook         :
   github           : "dsolodow"
   gitlab           : "dsolodow"
   keybase          :
-  instagram        :
   linkedin         : "damien-solodow-56155914"
   stackoverflow    : "9352249/damien-solodow"
   twitter          : "dsolodow"
-  youtube          : 
 
 # Social Sharing
-twitter:
-  username               : "dsolodow"
 og_image               : /assets/images/bio-photo.jpg	  
 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
