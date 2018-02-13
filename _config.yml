@@ -32,30 +32,12 @@ search_full_content      : false
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-yandex_site_verification :
-naver_site_verification  :
-
-# Social Sharing
-twitter:
-  username               : 
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : Person
-  name                   :
-  links: # An array of links to social media profiles
 
 # Analytics
 analytics:
   provider               : "google-universal"
   google:
     tracking_id          : "UA-114028220-1"
-
 
 # Site Author
 author:
@@ -64,31 +46,21 @@ author:
   bio              : "TBD"
   location         : "Central Indiana"
   email            : "bookwyrm79@gmail.com"
-  uri              :
+  uri              : "https://dsolodow.github.io"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        : "dsolodow"
   codepen          :
   dribbble         :
-  flickr           :
   facebook         :
-  foursquare       :
   github           : "dsolodow"
   gitlab           : "dsolodow"
   google_plus      :
   keybase          :
   instagram        :
-  lastfm           :
   linkedin         : "damien-solodow-56155914"
-  pinterest        :
-  soundcloud       :
   stackoverflow    : "9352249/damien-solodow"
-  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
-  tumblr           :
   twitter          : "dsolodow"
-  vine             :
-  weibo            :
-  xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : 
 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
@@ -121,7 +93,6 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: America/Indiana/Indianapolis
 
-
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -137,7 +108,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-
 
 # Archives
 #  Type
