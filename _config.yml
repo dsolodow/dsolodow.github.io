@@ -93,6 +93,30 @@ timezone: America/Indiana/Indianapolis
 include:
   - .htaccess
   - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - node_modules
+  - package.json
+  - README
+  - _drafts/template.md
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
 
 # Plugins (previously gems:)
 plugins:
