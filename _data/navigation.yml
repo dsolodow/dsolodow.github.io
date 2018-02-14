@@ -1,9 +1,9 @@
 main:
  - title: "Suggest Topic"
-   url: https://github.com/dsolodow/dsolodow.github.io/issues/new 
+  url: https://github.com/dsolodow/dsolodow.github.io/issues/new
  - title: "Tags"
-   url: /tags/
+  url: /tags/
  - title: "Categories"
-   url: /categories"
+  url: /categories"
  - title: "About"
-   url: /about/
+  url: /about/

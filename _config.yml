@@ -57,7 +57,7 @@ author:
   twitter          : "dsolodow"
 
 # Social Sharing
-og_image               : /assets/images/bio-photo.jpg	  
+og_image               : /assets/images/bio-photo.jpg
 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
@@ -101,6 +101,7 @@ exclude:
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
+  - .markdownlint.json
   - assets/js/plugins
   - assets/js/_main.js
   - assets/js/vendor
@@ -163,5 +164,5 @@ defaults:
       read_time: true
       comments: true
       share: true
-      related: false 
+      related: false
 
