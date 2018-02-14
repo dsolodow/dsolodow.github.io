@@ -9,11 +9,11 @@ blogger_orig_url: http://theevolvingadmin.blogspot.com/2013/05/write-blog-hello-
 ---
 The blog equivalent of "Hello World"
 
-Anyone who has ever read/looked at/skimmed a programming or scripting book has inevitably seen the "Hello World!" program. It doesn't do anything more than display that message, some at the console, some in a pop-up, and others put it on a web page. 
+Anyone who has ever read/looked at/skimmed a programming or scripting book has inevitably seen the "Hello World!" program. It doesn't do anything more than display that message, some at the console, some in a pop-up, and others put it on a web page.
 
-It's intended as nothing more than a "look, you made a program/script that does something!". Then it lets you bask in your success before actually having you do something useful or productive. 
+It's intended as nothing more than a "look, you made a program/script that does something!". Then it lets you bask in your success before actually having you do something useful or productive.
 
-That's basically what this post is; a simple "Hi, I exist!" before something with content. 
+That's basically what this post is; a simple "Hi, I exist!" before something with content.
 
 Future posts will have content, but whether or not they are of interest or use will depend on you the reader. :)
 

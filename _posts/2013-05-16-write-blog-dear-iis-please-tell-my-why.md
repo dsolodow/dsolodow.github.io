@@ -25,7 +25,7 @@ The message it gave was very straight-forward and pointed me to their documentat
 
 Their documentation correctly and helpfully pointed out that these accounts can't talk to Active Directory, and to resolve this issue the Application Pool should be reconfigured to run as a domain user account. They continued with step by step directions on how to make this change.
 
-Once I made this change, recycled the AppPool and reloaded the web page, I received one of the more non-specific errors I've seen:  
+Once I made this change, recycled the AppPool and reloaded the web page, I received one of the more non-specific errors I've seen:
 
 ***The page cannot be displayed because an internal server error has occurred.***
 
@@ -45,6 +45,6 @@ By default when you install IIS on a server it creates a local group called IIS_
 
 Once the domain account was added to this group and the AppPool restarted, the web app loaded properly and the installation completed successfully.
 
-Microsoft has a handy KB article on the default permissions and user rights for IIS7+: http://support.microsoft.com/kb/981949
+Microsoft has a handy KB article on the default permissions and user rights for IIS7+: [KB981949](http://support.microsoft.com/kb/981949)
 
 This is a pretty common issue with IIS applications (including classic ASP) that require domain accounts but is easy enough to solve. One way to avoid it is to create a domain group for AppPool identities, and that group can be granted the necessary user rights by GPO on the IIS servers and being added to the local IIS_IUSRS groups on them.

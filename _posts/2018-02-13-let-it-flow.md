@@ -18,8 +18,4 @@ Oh, and as a reward for your patience, please enjoy a Star Wars themed parody of
 
 [![Picture of Elsa with a blue lightsaber](https://img.youtube.com/vi/qSgJeVwjnpc/0.jpg)](https://www.youtube.com/watch?v=qSgJeVwjnpc)
 
-
-
-
-[ifttt-link]:https://ifttt.com 
-
+[ifttt-link]:https://ifttt.com
