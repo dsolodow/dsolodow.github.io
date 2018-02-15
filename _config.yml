@@ -91,8 +91,6 @@ include:
   - .htaccess
   - _pages
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
   - vendor
   - .asset-cache
   - .bundle
@@ -102,10 +100,7 @@ exclude:
   - assets/js/plugins
   - assets/js/_main.js
   - assets/js/vendor
-  - Capfile
   - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
   - node_modules
   - package.json
   - README
@@ -162,4 +157,3 @@ defaults:
       comments: true
       share: true
       related: false
-
