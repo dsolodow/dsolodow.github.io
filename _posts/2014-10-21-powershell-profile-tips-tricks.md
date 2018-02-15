@@ -7,7 +7,8 @@ tags:
 modified_time: '2014-10-21T12:05:46.502-04:00'
 blogger_id: tag:blogger.com,1999:blog-23185081170317196.post-8761384466274846516
 blogger_orig_url: http://theevolvingadmin.blogspot.com/2014/10/powershell-profile-tips-tricks.html
-excerpt: When, why and how to use a PowerShell profile.
+excerpt: When, why and how to use a PowerShell profile
+classes: wide
 ---
 
 # What it is
@@ -32,7 +33,7 @@ $profile | Get-Member –MemberType NoteProperty
 
 # What it's for
 
-Here's the real meat of the story. :simple_smile:
+Here's the real meat of the story. :smile:
 
 Since the profiles are standard PowerShell scripts, anything you can do in a PowerShell script can be in your profile. Just remember though, that the profile scripts run **every** time you launch PowerShell, so you don't want them to take a long time to run.
 
@@ -41,10 +42,10 @@ Anything you find yourself running/typing **every** time you launch the console 
 
 ## The most common and useful things to put in your profile are
 
-* Functions (help about_Functions)
-* Aliases (help about_Aliases)
-* PSDrives (help About_Providers)
-* PSDefaultParameterValues (help about\_Parameters\_Default_Values)
+* Functions (help [about_Functions](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions))
+* Aliases (help [about_Aliases](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_aliases))
+* PSDrives (help [About_Providers](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_providers))
+* PSDefaultParameterValues (help [about\_Parameters\_Default_Values](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_parameters_default_values))
 
 My profile started out originally because I didn't want to have to launch each of the different, separate, PowerShell "consoles" that each snap-in or tool seemed to create. After all, why go launch [PowerCLI](http://www.vmware.com/go/PowerCLI) or Exchange Management Shell when I can just create a function in my profile that adds those things to my current session?
 
@@ -52,7 +53,7 @@ Another very useful case are modules/snap-ins that have to be run from a server 
 
 So rather than have to create a new session each time you want to access it (or worse RDP to the server to run PowerShell!) I've created a function that uses [_implicit remoting_](http://blogs.technet.com/b/heyscriptingguy/archive/2013/09/08/remoting-the-implicit-way.aspx) to import the snap-in.
 
-I've posted a generalized and heavily commented version of my own profile script on GitHub: [https://github.com/dsolodow/IndyPoSH/blob/master/Profile.ps1](https://github.com/dsolodow/IndyPoSH/blob/master/Profile.ps1)
+I've posted a generalized and heavily commented version of my own profile script on GitHub: [Profile.ps1](https://github.com/dsolodow/IndyPoSH/blob/master/Profile.ps1)
 
 Feel free to read through it, post questions or comments in the Issues or Discussion pages for the project. Also feel free to borrow snippets or sections out of it that you want to use for yourself.
 
@@ -78,5 +79,5 @@ There aren't a lot of hard, fast rules but here are the ones I know of as well a
 * _It's a PowerShell script, treat it accordingly. This means comment it, format it appropriately, put it in version control, etc._
   [http://windowsitpro.com/blog/my-12-powershell-best-practices](http://windowsitpro.com/blog/my-12-powershell-best-practices)
 * Do share cool tricks or ideas with your co-workers, fellow IndyPosh members, the PowerShell community
-* Let your profile grow organically; when in doubt K.I.S.S.
-* Remember: help about_profiles
+* Let your profile grow organically; when in doubt [K.I.S.S.](https://en.wikipedia.org/wiki/KISS_principle)
+* Remember: help [about_profiles](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles)

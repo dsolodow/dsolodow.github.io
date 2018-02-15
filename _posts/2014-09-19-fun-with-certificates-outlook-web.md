@@ -7,17 +7,18 @@ tags:
 blogger_id: tag:blogger.com,1999:blog-23185081170317196.post-8303294717979752005
 blogger_orig_url: http://theevolvingadmin.blogspot.com/2014/09/fun-with-certificates-outlook-web.html
 excerpt: The cause of odd browser SSL/HTTPS errors
+toc: true
 ---
 
-## The Problem:
+## The Problem
 
 We recently had a user (we’ll call them "Bob") send in a ticket because when he tried to access Outlook Web Access from home he got a certificate error in the web browser that said the site wasn’t secure. Understandably concerned by this, he closed out the browser and contacted us.
 
-## The Diagnosis:
+## The Diagnosis
 
 So the first order of business was to determine if it was a global issue or just poor Bob. Since no other tickets had come in, and the site loaded correctly for us here it was almost certainly just Bob having this issue.
 
-### A few items that made this even more interesting:
+### A few items that made this even more interesting
 
 * Bob got this security warning on any secure Harrison websites, not just Outlook Web Access
 * Bob didn't have problems with non-Harrison secure websites
@@ -38,7 +39,7 @@ Our certificate (*.harrison.edu) said that it was OK. The next one up the chain 
 
 Ah-ha! This meant that the Windows certificate store had a corrupt copy of that certificate that needed to be replaced.
 
-## The Solution:
+## The Solution
 
 1. Determine which certificate in the store needs to be replaced
 2. Get a good copy of the certificate
