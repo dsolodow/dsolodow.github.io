@@ -48,10 +48,7 @@ author:
   email            : "bookwyrm79@gmail.com"
   uri              : "https://dsolodow.github.io"
   home             : # null (default), "absolute or relative url to link to author home"
-  bitbucket        : "dsolodow"
   github           : "dsolodow"
-  gitlab           : "dsolodow"
-  keybase          :
   linkedin         : "damien-solodow-56155914"
   stackoverflow    : "9352249/damien-solodow"
   twitter          : "dsolodow"
