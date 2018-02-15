@@ -6,6 +6,7 @@ tags:
  - certificates
 blogger_id: tag:blogger.com,1999:blog-23185081170317196.post-8303294717979752005
 blogger_orig_url: http://theevolvingadmin.blogspot.com/2014/09/fun-with-certificates-outlook-web.html
+excerpt: The cause of odd browser SSL/HTTPS errors
 ---
 
 ## The Problem:
