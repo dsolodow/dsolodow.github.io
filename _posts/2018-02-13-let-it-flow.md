@@ -8,7 +8,7 @@ tags:
 
 # Shameless self-promotion & automation
 
-As mentioned in an earlier [post]({{site.url}}/its-alive), one of the problems with the previous site that I wanted to solve was a lack of traffic. So, in an effort to help that (and a chance to play with a new toy), I've setup an [IFTTT][ifttt-link] applet to fire off a Tweet whenever a new post hits.
+As mentioned in an earlier [post](/[its-alive]), one of the problems with the previous site that I wanted to solve was a lack of traffic. So, in an effort to help that (and a chance to play with a new toy), I've setup an [IFTTT][ifttt-link] applet to fire off a Tweet whenever a new post hits.
 
 This will be my first use of [IFTTT][ifttt-link]; in fact I just setup the account a few minutes ago. But it's about as simple as it gets for this sort of thing, and is tied to my Google account so NBD.
 

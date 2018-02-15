@@ -157,3 +157,4 @@ defaults:
       comments: true
       share: true
       related: false
+      permalink: /:year/:month/:day/:title
