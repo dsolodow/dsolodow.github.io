@@ -2,11 +2,12 @@
 title: Fun with certificates – Outlook Web Access certificate error
 date: '2014-09-19T14:31:00.001-04:00'
 tags:
- - security
- - certificates
+ - Security
+ - Certificates
+categories: Troubleshooting
 blogger_id: tag:blogger.com,1999:blog-23185081170317196.post-8303294717979752005
 blogger_orig_url: http://theevolvingadmin.blogspot.com/2014/09/fun-with-certificates-outlook-web.html
-excerpt: The cause of odd browser SSL/HTTPS errors
+excerpt: Running down a cause of odd browser SSL/HTTPS errors
 toc: true
 ---
 

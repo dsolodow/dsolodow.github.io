@@ -2,8 +2,8 @@
 title: PowerShell Profile Tips & Tricks
 date: '2014-10-21T11:52:00.001-04:00'
 tags:
-- powershell
-- indyposh
+- PowerShell
+categories: Conceptual
 modified_time: '2014-10-21T12:05:46.502-04:00'
 blogger_id: tag:blogger.com,1999:blog-23185081170317196.post-8761384466274846516
 blogger_orig_url: http://theevolvingadmin.blogspot.com/2014/10/powershell-profile-tips-tricks.html
@@ -78,6 +78,6 @@ There aren't a lot of hard, fast rules but here are the ones I know of as well a
 * Don't make your profile script something that takes a long time to run as you'll run it a lot
 * _It's a PowerShell script, treat it accordingly. This means comment it, format it appropriately, put it in version control, etc._
   [http://windowsitpro.com/blog/my-12-powershell-best-practices](http://windowsitpro.com/blog/my-12-powershell-best-practices)
-* Do share cool tricks or ideas with your co-workers, fellow IndyPosh members, the PowerShell community
+* Do share cool tricks or ideas with your co-workers, the PowerShell community, blog readers, etc.
 * Let your profile grow organically; when in doubt [K.I.S.S.](https://en.wikipedia.org/wiki/KISS_principle)
 * Remember: help [about_profiles](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles)

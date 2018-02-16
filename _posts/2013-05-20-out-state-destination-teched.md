@@ -2,8 +2,8 @@
 title: Out-State -Destination "TechEd"
 date: '2013-05-20T13:22:00.001-04:00'
 tags:
-- conventions
-- off-topic
+- Conventions
+- Off-Topic
 ---
 
 # I'm leaving, on a jet-plane..
