@@ -1,5 +1,5 @@
 ---
-title: "What is [THWACK][thwack-link]?"
+title: "What is THWACK?"
 date: 2018-02-21 12:40:00 -05:00
 tags:
  - solarwinds
