@@ -5,5 +5,7 @@ main:
    url: /tags
  - title: "Categories"
    url: /categories"
+ - title: "Gists"
+   url: https://gist.github.com/dsolodow
  - title: "About"
    url: /about
