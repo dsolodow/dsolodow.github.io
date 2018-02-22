@@ -6,6 +6,7 @@ tags:
 modified_time: '2013-05-16T16:32:01.617-04:00'
 blogger_id: tag:blogger.com,1999:blog-23185081170317196.post-6448274688825425948
 blogger_orig_url: http://theevolvingadmin.blogspot.com/2013/05/write-blog-hello-world.html
+excerpt: First post; hello world!
 ---
 The blog equivalent of "Hello World"
 
