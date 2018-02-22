@@ -15,6 +15,6 @@ It's intended as nothing more than a "look, you made a program/script that does 
 
 That's basically what this post is; a simple "Hi, I exist!" before something with content.
 
-Future posts will have content, but whether or not they are of interest or use will depend on you the reader. :)
+Future posts will have content, but whether or not they are of interest or use will depend on you the reader. :smile: 
 
 If you're interested in seeing the various prototypical "Hello World" programs, Wikipedia has a nice list of them: [Hello World examples](http://en.wikipedia.org/wiki/List_of_Hello_world_program_examples)
