@@ -15,7 +15,7 @@ title_separator          : "-"
 github			 : [metadata]
 name                     : "Damien Solodow"
 description              : "My technical/IT related musings and learning experiences"
-url                      : "https://dsolodow.github.io"
+url                      : "https://theevolvingadmin.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "dsolodow/dsolodow-github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
