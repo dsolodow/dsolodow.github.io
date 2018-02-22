@@ -2,8 +2,7 @@
 title: "What is THWACK?"
 date: 2018-02-21 12:40:00 -05:00
 tags:
- - solarwinds
- - off-topic
+ - Solarwinds
 excerpt: intro to THWACK and Solarwinds
 ---
 

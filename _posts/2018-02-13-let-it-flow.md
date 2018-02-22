@@ -4,6 +4,7 @@ date: 2018-02-13 19:36:00 -05:00
 tags:
  - Off-Topic
  - Jekyll
+excerpt: Getting started with IFTTT
 ---
 
 # Shameless self-promotion & automation
