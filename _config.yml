@@ -118,7 +118,8 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-
+  - jekyll-seo-tag
+  - jekyll-mentions
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -126,7 +127,8 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-
+  - jekyll-seo-tag
+  - jekyll-mentions
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
