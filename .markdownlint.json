@@ -12,6 +12,7 @@
     "MD026": false,
     "MD033": {
         "allowed_elements": [
+            "i",
             "script"
         ]
     },
