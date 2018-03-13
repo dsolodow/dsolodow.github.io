@@ -50,7 +50,7 @@ They also make release candidate versions of new releases available in advance o
 
 The community ([THWACK][thwack-link]) is pretty active, and employees (including product managers and engineers) are frequent posters and active. One of the major benefits of this is that there are a lot of community created and contributed templates, reports, SNMP pollers, etc, in addition to all of the out of the box ones.
 
-So to wrap it all up :gift:, [Solarwinds][solarwinds-link] makes good, solid products, and they know who their target market/audience is (IT pros). This shows in their interactions, and most especially in their community ([THWACK][thwack-link]). So if you're in IT pro, especially one interested in or already using [Solarwinds][solarwinds-link] tools (even the [free ones][freetools-link]), comes join us and check it out!
+So to wrap it all up :gift:, [Solarwinds][solarwinds-link] makes good, solid products, and they know who their target market/audience is (IT pros). This shows in their interactions, and most especially in their community ([THWACK][thwack-link]). So if you're in IT pro, especially one interested in or already using [Solarwinds][solarwinds-link] tools (even the [free ones][freetools-link]), come join us and check it out!
 
 [thwack-link]:https://thwack.solarwinds.com/welcome
 [solarwinds-link]:https://www.solarwinds.com
