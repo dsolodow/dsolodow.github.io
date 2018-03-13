@@ -16,12 +16,13 @@ If <i>@</i>EndOfDay (Knowledge++) Then Day != Wasted
 My little corner of the Internet, built on [Jekyll][jekyll-link] and [GitHub Pages][gpages-link].
 The plan is for this site to be write-ups and/or articles around computers and IT related things.
 There is a two-fold motivation here:
+
 1. Oft times the best way to understand or cement an idea or concept is to explain it to others.
 2. When I figure out something interesting, weird, or even just something that required pulling together various sources to turn into a final thing, I want to share it as a way of giving back. If something is already well documented elsewhere, I'm much more likely to reference it (perhaps with notes) rather than write up my own version.
 
 ## Why am I here (this website)?
 
-Most likely you clicked on a link from somewhere. :smile:
+Most likely you clicked on a link from somewhere (possibly [Twitter][twitter-link]). :smile:
 
 In reality, it was probably for one of two reasons:
 
@@ -36,3 +37,4 @@ Of course it's [42](http://www.independent.co.uk/news/yes-the-answer-to-the-univ
 
 [jekyll-link]:http://jekyllrb.com
 [gpages-link]:https://pages.github.com
+[twitter-link]: https://twitter.com/DSolodow
