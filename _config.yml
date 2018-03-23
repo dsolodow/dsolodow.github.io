@@ -28,6 +28,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true
 search_full_content      : false
+future			 : false
 
 # SEO Related
 google_site_verification :
