@@ -4,6 +4,7 @@ date: 2018-03-11 10:54:00 -04:00
 toc: yes
 tags:
  - ADFS 
+categories:
  - Procedural
 excerpt: Upgrade ADFS 2012R2 to 2016
 ---
