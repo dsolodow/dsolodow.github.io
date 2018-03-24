@@ -30,3 +30,4 @@ We started with the following setup:
 [adfs2016-link]: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/overview/whats-new-active-directory-federation-services-windows-server
 [wap2016-link]:https://docs.microsoft.com/en-us/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server
 [article-link]:https://cloudblogs.microsoft.com/enterprisemobility/2018/03/05/azure-ad-and-adfs-best-practices-defending-against-password-spray-attacks/
+
