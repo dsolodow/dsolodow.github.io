@@ -4,7 +4,10 @@ permalink: /about
 layout: single
 author_profile: true
 share: true
+classes: wide
 toc: true
+toc_label: "Sections"
+toc_icon: "list-ul"
 ---
 
 If <i>@</i>EndOfDay (Knowledge++) Then Day != Wasted
