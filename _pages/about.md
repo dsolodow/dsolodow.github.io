@@ -14,10 +14,10 @@ If <i>@</i>EndOfDay (Knowledge++) Then Day != Wasted
 
 ## Who am I (the author)?
 
-Hi, my name is Damien Solodow and I'm a Windows sysadmin. 
+Hi, my name is Damien Solodow and I'm a Windows sysadmin.
 I started with Windows Server back in the NT 4.0 days, and got my first MCSE on it back in 1999.
-My first sysadmin job was in 2000, where I also got started with IIS 4.0, Exchange 5.5 and SQL Server 6.5; and I've worked with almost every version of them since. 
-I remember reading about PowerShell when it was still called Monad, but largely ignored it till I started looking at Exchange 2010, and then dove head-first down that rabbit hole. 
+My first sysadmin job was in 2000, where I also got started with IIS 4.0, Exchange 5.5 and SQL Server 6.5; and I've worked with almost every version of them since.
+I remember reading about PowerShell when it was still called Monad, but largely ignored it till I started looking at Exchange 2010, and then dove head-first down that rabbit hole.
 
 My [modus operandi][modus-link] has been to find things that I (sometimes because **someone** has to) need to know about, find good resources on it and then read and tinker till I have something approaching a handle on it.
 That started with the first PC (an AST 486) that my family got when I read the manual and then "DOS for Dummies", and continues today (currently ["Learn Azure in a Month of Lunches"][azuremol-link])
