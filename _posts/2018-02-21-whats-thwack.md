@@ -16,7 +16,7 @@ A more detailed version from their site is:
 
 Crazy indeed.
 
-Obviously, it's most useful for those who are (or are planning to be) Solarwinds customers, but it still has value for other IT pros. If nothing else, there are lots of opportunites to collect points to redeem for [swag][store-link].
+Obviously, it's most useful for those who are (or are planning to be) Solarwinds customers, but it still has value for other IT pros. If nothing else, there are lots of opportunities to collect points to redeem for [swag][store-link].
 
 ## So who/what is this "[Solarwinds][solarwinds-link]" anyway?
 
@@ -33,7 +33,7 @@ The short version is that they're a company that develops software products for 
 * [Log and Event Management][lem-link]
 * [VoIP and QoS monitoring][vqm-link]
 * [storage monitoring/management][srm-link]
-* [virtulization monitoring/management][vman-link]
+* [virtualization monitoring/management][vman-link]
 * [database performance management/monitoring][dpa-link]
 * [patch management][pman-link]
 * [and more!](https://www.solarwinds.com/downloads)
