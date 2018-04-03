@@ -1,11 +1,15 @@
 {
     "cSpell.words": [
+        "autoexec",
         "azuremol",
+        "certpath",
         "cmdlets",
         "corpsify",
         "dhcp",
         "dsolodow",
         "gpages",
+        "gpos",
+        "howtos",
         "ifttt",
         "iis",
         "inetpub",
@@ -14,10 +18,14 @@
         "mcse",
         "mvps",
         "nbar",
+        "pfes",
+        "pshome",
         "runtimes",
         "sccm",
         "snmp",
-        "solarwinds"
+        "solarwinds",
+        "theevolvingadmin",
+        "vsts"
     ],
     "cSpell.dictionaries": [
       "companies",
@@ -26,5 +34,17 @@
       "powershell",
       "softwareTerms",
       "en-us"
+    ],
+    "cSpell.ignorePaths": [
+        "**/node_modules/**",
+        "**/vscode-extension/**",
+        "**/.git/**",
+        ".vscode",
+        ".gitignore",
+        "typings",
+        "Gemfile*"
+    ],
+    "cSpell.ignoreRegExpList": [
+        "\\[(.*?)\\]"
     ]
 }
