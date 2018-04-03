@@ -2,6 +2,8 @@
     "cSpell.words": [
         "azuremol",
         "cmdlets",
+        "corpsify",
+        "dhcp",
         "dsolodow",
         "gpages",
         "ifttt",
@@ -10,6 +12,19 @@
         "iusrs",
         "lightsaber",
         "mcse",
-        "mvps"
+        "mvps",
+        "nbar",
+        "runtimes",
+        "sccm",
+        "snmp",
+        "solarwinds"
+    ],
+    "cSpell.dictionaries": [
+      "companies",
+      "filetypes",
+      "misc",
+      "powershell",
+      "softwareTerms",
+      "en-us"
     ]
 }
