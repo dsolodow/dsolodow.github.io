@@ -46,5 +46,6 @@
     ],
     "cSpell.ignoreRegExpList": [
         "\\[(.*?)\\]"
-    ]
+    ],
+    "files.eol": "\n"
 }
