@@ -3,6 +3,7 @@ layout: single
 title: New Work PC
 excerpt: New job, new PC
 tags: Off-Topic
+classes: wide
 ---
 
 One of the perks of a new job was a new computer. :smile:
@@ -12,15 +13,15 @@ I wanted a powerful laptop (I tend to run local VMs for testing), and prefer a 1
 
 There are a lot of reviews and info on this model already, but the highlights are:
 
-1) 15" LCD; either 1080 standard or 4k touch
-2) Choice of i7 7th Generation or Xeon E3-1505
-3) Up to 32 GB RAM
-4) M.2 PCIe SSD
-5) Height: 0.44" (11.1mm) | Width: 14.05" (357mm) | Depth: 9.26" (235.3mm) | Weight: 3.93lbs (1.78kg)
+1. 15" LCD; either 1080 standard or 4k touch
+2. Choice of i7 7th Generation or Xeon E3-1505
+3. Up to 32 GB RAM
+4. M.2 PCIe SSD
+5. Height: 0.44" (11.1mm), Width: 14.05" (357mm), Depth: 9.26" (235.3mm), Weight: 3.93lbs (1.78kg)
 
 I also ordered the Thunderbolt Dock [(TB16)][tb16-link] to go with it to hook up the pair of 24" 1080 monitors, as well as gigabit Ethernet, etc.
 
-I like that the dock has a pair of USB3 ports on the front along with a 3.5mm headphone jack, along with a nice complement of ports on the back.
+I like that the dock has a pair of USB3 ports on the front as well as a 3.5mm headphone jack, along with a nice complement of ports on the back.
 It is rather annoying that while it has multiple display outputs on the back, they're all different kinds.
 
 ---
