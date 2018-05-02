@@ -146,6 +146,9 @@ compress_html:
   ignore:
     envs: development
 
+# so @mentions use Twitter instead of GitHub
+jekyll-mentions: https://twitter.com	    
+
 # Defaults
 defaults:
   # _posts
