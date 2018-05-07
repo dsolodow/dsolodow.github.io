@@ -12,7 +12,7 @@ remote_theme             : "mmistakes/minimal-mistakes"
 locale                   : "en-US"
 title                    : "The Evolving Admin"
 title_separator          : "-"
-github			 : [metadata]
+github			             : [metadata]
 name                     : "Damien Solodow"
 description              : "My technical/IT related musings and learning experiences"
 url                      : "https://theevolvingadmin.com"
@@ -28,7 +28,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true
 search_full_content      : false
-future			 : false # true by default in GitPages. This prevents future dated posts from going up early.
+future			             : false # true by default in GitPages. This prevents future dated posts from going up early.
 
 # SEO Related
 google_site_verification :
@@ -55,7 +55,7 @@ author:
   twitter          : "dsolodow"
 
 # Social Sharing
-og_image               : /assets/images/bio-photo.jpg
+og_image           : /assets/images/bio-photo.jpg
 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
