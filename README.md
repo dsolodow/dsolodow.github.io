@@ -8,7 +8,7 @@ Built with the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes) 
 
 If you see any errors, broken links, etc., please create an [Issue][issues-link].
 
-If you would like to have me write about a specific topic, please request it via an [Issue][issues-link]. :)
+If you would like to have me write about a specific topic, please request it via an [Issue][issues-link]. :+1:
 
 [jekyll-link]: https://jekyllrb.com
 [issues-link]: https://github.com/dsolodow/dsolodow.github.io/issues
