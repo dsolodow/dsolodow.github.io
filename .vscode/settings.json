@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "ADFS",
+        "adsi",
         "autoexec",
         "azuremol",
         "certpath",
@@ -8,6 +9,9 @@
         "corpsify",
         "dhcp",
         "dsolodow",
+        "edit",
+        "exch",
+        "fsmo",
         "gpages",
         "gpos",
         "howtos",
