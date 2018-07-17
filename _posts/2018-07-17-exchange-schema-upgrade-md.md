@@ -1,6 +1,6 @@
 ---
 title: Exchange Schema Upgrade
-layout: single 
+layout: single
 title: exchange-schema-upgrade.md
 excerpt: Bringing Exchange schema up to date
 tags: Exchange
@@ -57,6 +57,30 @@ This was necessary because the schema upgrade expects the schema master to be in
 
 The next snag was the schema upgrade threw an error on the pre-req checks. :frowning:
 According to the logs, there was still an Exchange 2003 server in the environment.
+
+This turned out to be due to the Exchange 2000/3 server not having been properly decommissioned upon upgrade to Exchange 2007. Judging by what I saw, it looked like Exchange hadn't uninstalled as there were still objects in the Configuration partition such as the Exchange Server object, Recipient Update Service, etc.
+
+Once these were removed via ADSIEdit, the Exchange 2013 schema upgrade completed without issue. :thumbsup:
+
+## Next steps
+
+The Exchange 2016 schema upgrade required a Windows 2008 R2 domain and forest functional levels, so I wasn't able to apply that schema upgrade yet. So it was necessary to:
+
+1. Re-enable outbound replication from the 2008 domain controller
+2. Verify replication completed successfully
+3. Transfer Schema Master FSMO role to another DC
+4. Demote Windows 2008 domain controller
+5. Raise forest and domain functional levels (was able to go to 2012 R2)
+6. Run Exchange 2016 schema upgrade on new Schema Master
+
+## Guess what they forgot to do?
+
+The Exchange 2016 schema upgrade failed saying there was still an Exchange 2007 server in the environment.
+A bit of checking in ADSIEdit showed the Exchange Server object for the Exchange 2007 server. Once this was removed, the Exchange 2016 schema upgrade completed successfully.
+
+With all this done, it was now possible to actually (*finally*) install Exchange Server 2016.
+
+Fortunately that went without hiccup and we were in business. :smile:
 
 [schemaVersion-link]:https://eightwone.com/references/schema-versions/
 [supported-link]:https://blogs.technet.microsoft.com/exchange/2012/12/05/decommissioning-your-exchange-2010-servers-in-a-hybrid-deployment/
