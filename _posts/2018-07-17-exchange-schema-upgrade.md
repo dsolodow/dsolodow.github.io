@@ -1,9 +1,9 @@
 ---
 title: Exchange Schema Upgrade
 layout: single
-title: exchange-schema-upgrade.md
 excerpt: Bringing Exchange schema up to date
 tags: Exchange
+classes: wide
 ---
 # What and why
 
