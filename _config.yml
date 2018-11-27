@@ -28,7 +28,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true
 search_full_content      : false
-future			             : false # true by default in GitPages. This prevents future dated posts from going up early.
+future			 : false # true by default in GitPages. This prevents future dated posts from going up early.
 
 # SEO Related
 google_site_verification :
@@ -121,6 +121,7 @@ plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-mentions
+  - jekyll-include-cache  
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -130,6 +131,7 @@ whitelist:
   - jemoji
   - jekyll-seo-tag
   - jekyll-mentions
+  - jekyll-include-cache  
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
