@@ -3,7 +3,6 @@ layout: single
 title: What's on that port?
 excerpt: Why are these PCs listening on port 80?
 tags: security powershell
-#classes: wide
 ---
 # What's on that port?
 
@@ -27,11 +26,11 @@ Now let's see what process is listening on the port:
 Invoke-Command -ComputerName $PCs -ScriptBlock {netstat -ano | findstr :80}
 ```
 
-[insert screenshot]
+![Table of TCP ports, status and PID]({{site.url}}/assets/images/whats-on-that-port/process.jpg)
 
 On each computer, the process listening on port 80 had PID 4 (far right column). On a Windows machine, PID 4 is SYSTEM, aka the kernel.
 This meant that it wasn't a user process listening on port 80, so the odds of it being malware or the like went down __*dramatically*__. :relieved:
-It also meant that it was almost definitely from the Windows built-in, kernel level HTTP listener (http.sys)
+It *also* meant that it was almost definitely from the Windows built-in, kernel level HTTP listener (http.sys)
 
 Maybe they had something like IIS, MSMQ, etc. installed?
 
@@ -43,15 +42,17 @@ Invoke-Command -ComputerName $pcs -Credential $admin -ScriptBlock {
 ```
 
 Nope, no hits there. :frowning:
+
 A bit of Googling for 'http.sys show http listener' revealed the handy command **netsh http show urlacl**, so...
 
 ```powershell
 Invoke-Command -ComputerName $pcs -ScriptBlock {netsh http show urlacl | findstr :80}
 ```
 
-[insert screenshot]
+![Image of URL strings]({{site.url}}/assets/images/whats-on-that-port/listener.jpg)
 
 Those look like GUIDs. To the Google!
 
-And one of the first hits was: https://blogs.msdn.microsoft.com/oldnewthing/20180703-00/?p=99145
+And one of the first hits was: [How can I determine why the System process is listening on port 80?](https://blogs.msdn.microsoft.com/oldnewthing/20180703-00/?p=99145)
+
 This indicated BranchCache, which is harmless but maybe undesirable now.
