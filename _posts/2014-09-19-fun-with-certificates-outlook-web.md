@@ -30,11 +30,11 @@ This last point is rather interesting and is actually rather telling. IE and Chr
 
 So we took a look at Bobs PC, and visited our Outlook Web Access page to get the certificate warning. We pulled up the certificate info ([HowTo](https://www.globalsign.com/en/blog/how-to-view-ssl-certificate-details/#ie)) so we could try to find out why his browser thought something was wrong.  Here’s what we saw:
 
-![Image of certificate details showing error]({{site.url}}/assets/images/2014-09-19-fun-with-certs/cert.png)
+![Image of certificate details showing error]({{site.url}}/assets/images/fun-with-certs/cert.png)
 
 The Details tab wasn't immediately helpful, but the Certification Path tab was. The Certification Path tab shows the [Certificate Chain](http://en.wikipedia.org/wiki/Chain_of_trust) for the given certificate:
 
-![Image of certificate path]({{site.url}}/assets/images/2014-09-19-fun-with-certs/certpath.png)
+![Image of certificate path]({{site.url}}/assets/images/fun-with-certs/certpath.png)
 
 Our certificate (*.harrison.edu) said that it was OK. The next one up the chain (DigiCert Secure Server CA) also said it was OK. However, the top (or root) certificate was not OK.
 
