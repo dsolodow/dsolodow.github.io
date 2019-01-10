@@ -59,5 +59,6 @@
         "\\:(.*?)\\:" //ignore strings inside ::
     ],
     "files.eol": "\n",
-    "markdown.extension.toc.githubCompatibility": true
+    "markdown.extension.toc.githubCompatibility": true,
+    "yaml.format.enable": true
 }

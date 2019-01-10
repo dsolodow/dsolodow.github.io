@@ -5,57 +5,57 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "air"
-remote_theme             : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "air"
+remote_theme: "mmistakes/minimal-mistakes"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "The Evolving Admin"
-title_separator          : "-"
-github			             : [metadata]
-name                     : "Damien Solodow"
-description              : "My technical/IT related musings and learning experiences"
-url                      : "https://theevolvingadmin.com"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "dsolodow/dsolodow-github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-words_per_minute         : 200
+locale: "en-US"
+title: "The Evolving Admin"
+title_separator: "-"
+github: [metadata]
+name: "Damien Solodow"
+description: "My technical/IT related musings and learning experiences"
+url: "https://theevolvingadmin.com"
+baseurl: # the subpath of your site, e.g. "/blog"
+repository: "dsolodow/dsolodow-github.io"
+teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+words_per_minute: 200
 comments:
-  provider               : "disqus"
+  provider: "disqus"
   disqus:
-    shortname            : "theevolvingadmin"
+    shortname: "theevolvingadmin"
 atom_feed:
-  path                   : # blank (default) uses feed.xml
-search                   : true
-search_full_content      : false
-future			 : false # true by default in GitPages. This prevents future dated posts from going up early.
+  path: # blank (default) uses feed.xml
+search: true
+search_full_content: false
+future: false # true by default in GitPages. This prevents future dated posts from going up early.
 
 # SEO Related
-google_site_verification :
-bing_site_verification   :
+google_site_verification:
+bing_site_verification:
 
 # Analytics
 analytics:
-  provider               : "google-universal"
+  provider: "google-universal"
   google:
-    tracking_id          : "UA-114028220-1"
+    tracking_id: "UA-114028220-1"
 
 # Site Author
 author:
-  name             : "Damien Solodow"
-  avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "Long time Windows sysadmin, lifelong geek. Married crazy cat guy."
-  location         : "Central Indiana"
-  email            : "bookwyrm79@gmail.com"
-  uri              : "https://theevolvingadmin.com"
-  home             : # null (default), "absolute or relative url to link to author home"
-  github           : "dsolodow"
-  linkedin         : "damien-solodow-56155914"
-  stackoverflow    : "9352249/damien-solodow"
-  twitter          : "dsolodow"
+  name: "Damien Solodow"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "Long time Windows sysadmin, lifelong geek. Married crazy cat guy."
+  location: "Central Indiana"
+  email: "bookwyrm79@gmail.com"
+  uri: "https://theevolvingadmin.com"
+  home: # null (default), "absolute or relative url to link to author home"
+  github: "dsolodow"
+  linkedin: "damien-solodow-56155914"
+  stackoverflow: "9352249/damien-solodow"
+  twitter: "dsolodow"
 
 # Social Sharing
-og_image           : /assets/images/bio-photo.jpg
+og_image: /assets/images/bio-photo.jpg
 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
@@ -121,7 +121,7 @@ plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-mentions
-  - jekyll-include-cache  
+  - jekyll-include-cache
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -131,7 +131,7 @@ whitelist:
   - jemoji
   - jekyll-seo-tag
   - jekyll-mentions
-  - jekyll-include-cache  
+  - jekyll-include-cache
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
