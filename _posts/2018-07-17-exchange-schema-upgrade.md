@@ -1,5 +1,6 @@
 ---
 title: Exchange Schema Upgrade
+date: 2018-07-17 11:00:00 -04:00
 layout: single
 excerpt: Bringing Exchange schema up to date
 tags: Exchange
