@@ -58,5 +58,6 @@
         "\\[(.*?)\\]", //ignore strings inside []
         "\\:(.*?)\\:" //ignore strings inside ::
     ],
-    "files.eol": "\n"
+    "files.eol": "\n",
+    "markdown.extension.toc.githubCompatibility": true
 }
