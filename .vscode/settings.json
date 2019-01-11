@@ -60,5 +60,9 @@
     ],
     "files.eol": "\n",
     "markdown.extension.toc.githubCompatibility": true,
-    "yaml.format.enable": true
+    "yaml.format.enable": true,
+    "files.exclude": {
+        "**/_site": true,
+        "**/vendor": true
+    }
 }
