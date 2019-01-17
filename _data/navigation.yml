@@ -1,11 +1,11 @@
 main:
- - title: "Suggest Topic"
-   url: https://github.com/dsolodow/dsolodow.github.io/issues/new
- - title: "Tags"
-   url: /tags
- - title: "Categories"
-   url: /categories"
- - title: "Gists"
-   url: https://gist.github.com/dsolodow
- - title: "About"
-   url: /about
+  - title: "Suggest Topic"
+    url: https://github.com/dsolodow/dsolodow.github.io/issues/new
+  - title: "Tags"
+    url: /tags
+  - title: "Categories"
+    url: /categories
+  - title: "Gists"
+    url: https://gist.github.com/dsolodow
+  - title: "About"
+    url: /about

@@ -3,6 +3,7 @@ title: Exchange Schema Upgrade
 date: 2018-07-17 11:00:00 -04:00
 tags:
  - Exchange
+categories: Troubleshooting
 excerpt: Bringing Exchange schema up to date
 classes: wide
 ---
