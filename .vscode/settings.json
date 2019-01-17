@@ -38,12 +38,12 @@
         "xeon"
     ],
     "cSpell.dictionaries": [
-      "companies",
-      "filetypes",
-      "misc",
-      "powershell",
-      "softwareTerms",
-      "en-us"
+        "companies",
+        "filetypes",
+        "misc",
+        "powershell",
+        "softwareTerms",
+        "en-us"
     ],
     "cSpell.ignorePaths": [
         "**/node_modules/**",
@@ -60,5 +60,11 @@
     ],
     "files.eol": "\n",
     "markdown.extension.toc.githubCompatibility": true,
-    "yaml.format.enable": true
+    "yaml.format.enable": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.bundle": true,
+        "**/vendor": true,
+        "**/_site": true
+    }
 }
