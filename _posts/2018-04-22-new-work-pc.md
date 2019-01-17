@@ -1,9 +1,9 @@
 ---
-layout: single
 title: New Work PC
 date: 2018-04-22 11:00:00 -04:00
+tags:
+ - Off-Topic
 excerpt: New job, new PC
-tags: Off-Topic
 classes: wide
 ---
 
