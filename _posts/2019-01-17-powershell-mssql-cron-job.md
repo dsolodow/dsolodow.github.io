@@ -1,6 +1,6 @@
 ---
 title: PowerShell MSSQL cron job
-date: 2019-01-16 17:25:00 -05:00
+date: 2019-01-16 21:45:00 -05:00
 tags:
  - SQL
  - PowerShell
@@ -10,7 +10,7 @@ classes: wide
 toc: true
 toc_label: "Skip ahead"
 ---
-# I did **WHAT**
+# I did *what*
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">
 Just setup a cron job that runs a PowerShell script to build an htpasswd file from the results of an Mssql query. Cross platform ftw. Thanks <a href="https://twitter.com/cl?ref_src=twsrc%5Etfw">@cl</a>
@@ -20,7 +20,7 @@ Damien Solodow (@DSolodow) <a href="https://twitter.com/DSolodow/status/10853082
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## **Why** I did that
+## *Why* I did that
 
 TL;DR - wanted to get rid of a manual process on a legacy system. :smiley:
 
@@ -32,9 +32,9 @@ Just about the *only* thing the server does is host a pretty basic website. The 
 
 The solution used on this legacy server was a 3rd party HTML "locker" that was last updated to support **Windows 8**. :open_mouth:
 
-The process to update the credential list involves a SQL Agent job that emails a file to someone, who then has to follow a nearly 30 step **manual process** that involves carefully modifying and saving the file, logging into the web server via RDP, and running a GUI app to import said file and update the credential list. :sob: :scream: :dizzy_face:
+The process to update the credential list involves a SQL Agent job that emails a file to someone, who then has to follow a nearly *30 step* **manual process** that involves carefully modifying and saving the file, logging into the web server via RDP, and running a GUI app to import said file and update the credential list. :sob: :scream: :dizzy_face:
 
-## **How** I did that
+## *How* I did that
 
 ### New solution
 
@@ -54,12 +54,12 @@ So it was time to:
 1. Copy web content to new server
 2. Add SSL certificate to server
 3. Configure Apache for site, SSL redirection
-4. Create sample htpasswd for site (outside site content)
+4. Create sample htpasswd for site
 5. Configure Apache to do forms authentication for the required directories using the sample htpasswd
    1. this was in the main apache config instead of using .htaccess as it's better that way if you have control of the server
 6. Test it out
 
-*Most* of this was from apache docs and some Googling, and some trial and error.
+*Most* of this was from [Apache docs][apache-doc-link] and some Googling, and a healthy dose of trial and error. :wink:
 
 ### Getting the data
 
@@ -70,18 +70,18 @@ Then I used that login in [SSMS][ssms-link] to run a test query:
 SELECT top 10 username, password FROM erp_db..view_user
 ```
 
-This ran successfully, so credentials, security, and query are good, so time to run that via PowerShell on the Linux server.
-I'd selected to install powershell-core during the initial Ubuntu install, but instructions are here: [Install PowerShell on Ubuntu][pscore-linux-link]
+This ran successfully; so credentials, security, and query are good, so time to run that via PowerShell on the Linux server.
+I'd selected to install PowerShell Core during the initial Ubuntu install, but instructions for existing installs are here: [Install PowerShell on Ubuntu][pscore-linux-link]
 
-The SQLServer PowerShell module is cross-platform, so it can be installed in PowerShell Core on Linux. :thumbs_up:
+The SQLServer PowerShell module is cross-platform, so it can be installed in PowerShell Core on Linux. :+1:
 
-Unfortunately, installing this revealed that only a subset of cmdlets are available on Core under Linux, and **Invoke-Sqlcmd** isn't one of them. :anguished:
+Unfortunately, installing this revealed that only a subset of cmdlets are available when installed in Core, and **Invoke-Sqlcmd** isn't one of them. :anguished:
 
-I remembered a recent tweet from @cl about the dbatools module going cross-platform, so I gave that one a try:
+I remembered a recent tweet from Chrissy LeMaire (@cl) about the [dbatools module][dbatools-link] going cross-platform, so I gave that one a try:
 
 ```powershell
-Install-Module dbatools -Scope CurrentUser
-Get-Command -Module dbatools -Noun *query*
+Install-Module 'dbatools' -Scope CurrentUser
+Get-Command -Module 'dbatools' -Noun '*query*'
 ```
 
 **Invoke-DbaQuery** looks like a winner, so time to read the [documentation][dbaquery-help] for it.
@@ -89,19 +89,19 @@ Get-Command -Module dbatools -Noun *query*
 Looked like the commands to run were:
 
 ```powershell
-$login = get-credential
+$login = Get-Credential -UserName 'SQLLOGIN'
 Invoke-DbaQuery -SqlCredential $login -SqlInstance 'SQLSERVER' -Database 'erp_db' -Query 'SELECT top 10 username, password FROM view_user'
 ```
 
 Unfortunately, I got a warning instead of results:
 
-WARNING: [12:23:25][Invoke-DbaQuery] Failure | Property LoginSecure cannot be changed or read after a connection string has been set.
+![Yellow text warning message]({{site.url}}/assets/images/powershell-mssql-cron-job/warning.png)
 
 Doh! :astonished:
 
-Maybe this was something wonky with Linux. So I tried the same PowerShell on my Windows box, using Windows PowerShell instead of Core.
+Maybe this was something wonky with running the module under PowerShell Core on Linux... So I tried the same PowerShell on my Windows box, using Windows PowerShell instead of Core.
 
-Nope, same error. Smells like a bug in the module, so off to their [issues page][issues-link].
+Nope, same error. :-1: Smells like a bug in the module, so off to their [issues page][issues-link]...
 
 Searching through there didn't show any previous reports of this issue, so I used their handy Issues template and submitted a new one: [Issue-4946][4946-link]
 
@@ -124,7 +124,7 @@ This seemed a more minimal course than giving cron_user the ability to run 'sudo
 The htpasswd utility allows you to pass both the username and password as part of the command line, so it was a simple PowerShell bit to do that:
 
 ```powershell
-$login = get-credential
+$login = Get-Credential -UserName 'SQLLOGIN'
 $creds = Invoke-DbaQuery -SqlCredential $login -SqlInstance 'SQLSERVER' -Database 'erp_db' -Query 'SELECT top 10 username, password FROM view_user'
 $creds | ForEach-Object {htpasswd -b /path/to/htpassword $_.username $_.password}
 ```
@@ -147,15 +147,15 @@ So here's what it ended up like:
 ```powershell
 #Requires -Modules @{ModuleName="dbatools"; ModuleVersion="0.9.741"}
 
-$username = "SQLLOGIN"
-$password = ConvertTo-SecureString -String "SQLPASSWORD" -AsPlainText -Force
+$username = 'SQLLOGIN'
+$password = ConvertTo-SecureString -String 'SQLPASSWORD' -AsPlainText -Force
 $cred = New-Object -typename System.Management.Automation.PSCredential -ArgumentList $username, $password
 
 $invokeDbaQuerySplat = @{
     SqlInstance   = 'SQLSERVER'
     Database      = 'erp_db'
     SqlCredential = $cred
-    Query         = "SELECT username,password FROM view_user"
+    Query         = 'SELECT username,password FROM view_user'
 }
 $results = Invoke-DbaQuery @invokeDbaQuerySplat
 if ($results) {
@@ -183,3 +183,5 @@ Success! :relieved: :sunglasses:
 [dbaquery-help]:https://docs.dbatools.io/#Invoke-DbaQuery
 [issues-link]:https://github.com/sqlcollaborative/dbatools/issues
 [4946-link]:https://github.com/sqlcollaborative/dbatools/issues/4946
+[apache-doc-link]:https://httpd.apache.org/docs/2.4/howto/auth.html
+[dbatools-link]:https://dbatools.io/
