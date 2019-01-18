@@ -165,3 +165,9 @@ defaults:
       share: true
       related: false
       permalink: /:year/:month/:day/:title
+
+jekyll_compose:
+  draft_default_front_matter:
+    description:
+    tags:
+    layout: single
