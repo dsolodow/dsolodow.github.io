@@ -1,77 +1,35 @@
 {
-    "cSpell.words": [
-        "ADFS",
-        "adsi",
-        "autoexec",
-        "azuremol",
-        "certpath",
-        "cmdlets",
-        "corpsify",
-        "dbatools",
-        "dhcp",
-        "dsolodow",
-        "edit",
-        "exch",
-        "fsmo",
-        "gpages",
-        "gpos",
-        "howtos",
-        "htpasswd",
-        "ifttt",
-        "htaccess",
-        "htpassword",
-        "htpasswd",
-        "iis",
-        "inetpub",
-        "iusrs",
-        "lightsaber",
-        "mcse",
-        "mvps",
-        "nbar",
-        "pfes",
-        "pshome",
-        "rsat",
-        "runtimes",
-        "sccm",
-        "snmp",
-        "solarwinds",
-        "subnets",
-        "Solodow",
-        "servername",
-        "theevolvingadmin",
-        "uefi",
-        "vlsc",
-        "vsts",
-        "xeon"
-    ],
-    "cSpell.dictionaries": [
-        "companies",
-        "filetypes",
-        "misc",
-        "powershell",
-        "softwareTerms",
-        "en-us"
-    ],
-    "cSpell.ignorePaths": [
-        "**/node_modules/**",
-        "**/vscode-extension/**",
-        "**/.git/**",
-        ".vscode",
-        ".gitignore",
-        "typings",
-        "Gemfile*"
-    ],
-    "cSpell.ignoreRegExpList": [
-        "\\[(.*?)\\]", //ignore strings inside []
-        "\\:(.*?)\\:" //ignore strings inside ::
-    ],
     "files.eol": "\n",
+        "files.exclude": {
+            "**/.git": true,
+            "**/.bundle": true,
+            "**/vendor": true,
+            "**/_site": true
+        },
     "markdown.extension.toc.githubCompatibility": true,
+    "markdownlint.config": {
+        "default": true,
+        "MD001": false,
+        "MD002": false,
+        "MD003": {
+            "style": "atx"
+        },
+        "MD007": {
+            "indent": 4
+        },
+        "MD013": false,
+        "MD026": false,
+        "MD033": {
+            "allowed_elements": [
+                "i",
+                "script",
+                "blockquote",
+                "a",
+                "p"
+            ]
+        },
+        "MD041": false,
+        "no-hard-tabs": false
+    },
     "yaml.format.enable": true,
-    "files.exclude": {
-        "**/.git": true,
-        "**/.bundle": true,
-        "**/vendor": true,
-        "**/_site": true
-    }
 }
