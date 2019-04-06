@@ -1,11 +1,11 @@
 {
     "files.eol": "\n",
-        "files.exclude": {
-            "**/.git": true,
-            "**/.bundle": true,
-            "**/vendor": true,
-            "**/_site": true
-        },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.bundle": true,
+        "**/vendor": true,
+        "**/_site": true
+    },
     "markdown.extension.toc.githubCompatibility": true,
     "markdownlint.config": {
         "default": true,
