@@ -18,6 +18,7 @@
             "indent": 4
         },
         "MD013": false,
+        "MD025": false,
         "MD026": false,
         "MD033": {
             "allowed_elements": [
@@ -32,4 +33,7 @@
         "no-hard-tabs": false
     },
     "yaml.format.enable": true,
+    "cSpell.words": [
+        "mmsmoa"
+    ],
 }
