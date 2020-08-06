@@ -6,7 +6,7 @@
         "**/vendor": true,
         "**/_site": true
     },
-    "markdown.extension.toc.githubCompatibility": true,
+//    "markdown.extension.toc.githubCompatibility": true,
     "markdownlint.config": {
         "default": true,
         "MD001": false,
