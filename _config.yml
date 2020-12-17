@@ -36,7 +36,7 @@ bing_site_verification:
 
 # Analytics
 analytics:
-  provider: "google-universal"
+  provider: "google-gtag"
   google:
     tracking_id: "UA-114028220-1"
 
